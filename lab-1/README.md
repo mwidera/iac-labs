@@ -37,7 +37,11 @@ Czym jest fork repozytorium?
 
 ## Zadanie 2 - Uruchomienie projektu
 
+<<<<<<< HEAD
 Krok będzie wykonywany wspólnie
+=======
+Uruchomienie aplikacji lokalnie w celach deweloperskich
+>>>>>>> 307e822 (Add script for lab-1)
 
 - Sklonuj repozytorium na swój komputer
 - Przejdź do katalogu example-app
@@ -160,3 +164,23 @@ Przykładowy wygląd środowiska ciągłej integracji po modyfikacji:
 W jakim celu budowanie kodu jest przydatne?
 
 Zanotuj koszty wykorzystania innych systemów operacyjnych do testowania
+
+## Zadanie 6 - Wdrażanie kodu w sposób ciągły (CD)
+
+Uruchamianie aplikacji w kontekście PaaS
+
+- Przejdź na gałąź (branch) `render`
+- Wejdź na stronę dostawcy platformy jako serwis (PaaS): [render.com](https://render.com/)
+- Załóż konto z wykorzystaniem konta GitHuba
+- Połącz swoje repozytorium do tworzonego stosu w kontekście PaaS
+- Uruchom wdrożenie aplikacji z planu znajdującego się w pliku: [render.yaml](../render.yaml)
+
+Pytanie: Czy operacja zakończyła się powodzeniem?
+
+### Dodawanie bazy danych w wersji produkcyjnej
+
+- Dodaj bazę danych [PostgreSQL](https://dashboard.render.com/new/database) do serwisu
+- Otrzymane informacje o utworzonej bazie zastosuj dla środowiska aplikacji webowej utworzonej na portalu
+- Wykonaj ponowne wdrożenie kodu, by wprowadzone zmiany zostały rozpropagowane po środowisku
+
+Pytanie: Czy modyfikacje github actions są potrzebne, by uzyskać ciągle wdrażanie w tym przypadku?
