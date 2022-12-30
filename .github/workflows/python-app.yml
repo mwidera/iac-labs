@@ -29,7 +29,7 @@ jobs:
       uses: snok/install-poetry@v1.3.3
     - name: Install Poetry Deps
       run: |
-        poetry run install
+        poetry install
     - name: Lint 
       run: |
         poetry run task lint
